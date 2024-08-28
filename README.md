@@ -36,11 +36,10 @@ Install project dependencies:
 Start the app:
 `$ npm start`
 
-#### Future Updates
-* Enable PWA
-* Leaderboard
+### Build the docker image :
+docker build -t node-v1 .
 
-And More ! There's always room for improvement!
 
-#### Deployed Version (Feel free to visit) 👇
-https://lakshman-farm.herokuapp.com/
+### Execute the docker image
+docker run -dp 8080:8080 --name node-farm-cloud node-v1:latest
+
